@@ -40,3 +40,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Changed
 - Updated tab length to 4 spaces for greater consistency across snippets
 
+## [1.4.0]
+### Changed 
+- Added ESBuild built extension 
+- Bumped dependencies
+- Migrated to pnpm
+- Added better imports for tests
+- Removed Prettier and ESLint, replaced with Biome 
+
