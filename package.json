@@ -33,10 +33,10 @@
 		"vscode:prepublish": "npm run esbuild-base -- --minify",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
-    "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
-    "esbuild": "npm run esbuild-base -- --sourcemap",
-    "esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
-    "test-compile": "tsc -p ./",
+		"esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
+		"esbuild": "npm run esbuild-base -- --sourcemap",
+		"esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
+		"test-compile": "tsc -p ./",
 		"test": "vscode-test",
 		"lint": "eslint -c .eslintrc.js --ext .ts src"
 	},
@@ -54,5 +54,6 @@
 	},
 	"dependencies": {
 		"@types/vscode": "^1.84.0"
-	}
+	},
+	"packageManager": "pnpm@10.21.0+sha512.da3337267e400fdd3d479a6c68079ac6db01d8ca4f67572083e722775a796788a7a9956613749e000fac20d424b594f7a791a5f4e2e13581c5ef947f26968a40"
 }
