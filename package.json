@@ -20,7 +20,7 @@
 	"activationEvents": [
 		"onCommand:extension.helloWorld"
 	],
-	"main": "./out/extension.js",
+	"main": "./dist/extension.js",
 	"contributes": {
 		"snippets": [
 			{
@@ -40,7 +40,6 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.3.5",
-		"@changesets/cli": "^2.29.7",
 		"@types/node": "^22",
 		"@vscode/test-cli": "^0.0.12",
 		"@vscode/test-electron": "^2.5.2",

@@ -1,0 +1,10 @@
+node_modules
+pnpm-workspace.yaml
+biome.json
+pnpm-lock.yaml
+scripts/
+src/
+.github/
+
+tsconfig.json
+.vscode
