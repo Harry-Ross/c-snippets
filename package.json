@@ -30,16 +30,13 @@
 		]
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run esbuild-base -- --minify",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
-		"esbuild": "npm run esbuild-base -- --sourcemap",
-		"esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
-		"test-compile": "tsc -p ./",
+		"check-types": "tsc --noEmit",
+		"compile": "pnpm check-types && node ./scripts/build.js",
 		"test": "vscode-test",
 		"lint": "biome lint",
-		"format": "biome format --write"
+		"format": "biome format --write",
+		"vscode:prepublish": "npm run package",
+		"package": "pnpm check-types && node ./scripts/build.js --production"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.3.5",
