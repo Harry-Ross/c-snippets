@@ -41,6 +41,7 @@
 		"lint": "eslint -c .eslintrc.js --ext .ts src"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "2.3.5",
 		"@types/mocha": "^2.2.42",
 		"@types/node": "^10.17.49",
 		"@typescript-eslint/eslint-plugin": "^6.9.1",
