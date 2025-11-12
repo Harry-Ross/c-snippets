@@ -2,7 +2,7 @@
 	"name": "c-snippets",
 	"displayName": "C Snippets",
 	"description": "Snippets for the C programming language",
-	"version": "1.4.6",
+	"version": "1.4.9",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.44.2"
