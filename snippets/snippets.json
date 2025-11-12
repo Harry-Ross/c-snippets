@@ -1,143 +1,94 @@
 {
-    "Standard Starter Template": {
-        "prefix": "sst",
-        "body": [
-            "#include <stdio.h>",
-            "",
-            "int main (int argc, char *argv[]) {",
-            "    return 0;",
-            "}"
-        ],
-        "description": "A standard starter template for a C program"
-    },
-    "Stdlib Variant Starter Template": {
-        "prefix": "libsst",
-        "body": [
-            "#include <stdio.h>",
-            "#include <stdlib.h>",
-            "",
-            "int main (int argc, char *argv[]) {",
-            "    return EXIT_SUCCESS;",
-            "}"
-        ],
-        "description": "A standard starter template for a C program with stdlib included"
-    },
-    "If statement": {
-        "prefix": "if",
-        "body": [
-            "if ($0) {",
-            "    /* code here */ ",
-            "}"
-        ],
-        "description": "Creates an if statement"
-    },
-    "Else if statement": {
-        "prefix": "elif",
-        "body": [
-            "else if ($0) {",
-            "    /* code here */ ",
-            "}"
-        ],
-        "description": "Creates an else if statement"
-    },
-    "Else statement": {
-        "prefix": "else",
-        "body": [
-            "else {",
-            "    /* code here */ ",
-            "}"
-        ],
-        "description": "Creates an else statement"
-    },
-    "For loop": {
-        "prefix": "for",
-        "body": [
-            "for (int i = 0; i < $0; i++) {",
-            "    /* code here */ ",
-            "}"
-        ],
-        "description": "Creates a for loop that runs for a certain number if iterations"
-    },
-    "While loop" : {
-        "prefix": "while",
-        "body": [
-            "while ($0) {",
-            "    /* code here */ ",
-            "}"
-        ],
-        "description": "Creates a while loop"
-    },
-    "Do...while loop": {
-        "prefix": "dowhile",
-        "body": [
-            "do {",
-            "    /* code here */ ",
-            "} while($0)"
-        ],
-        "description": "Creates a do...while loop"
-    },
-    "Create linked list": {
-        "prefix": "clist",
-        "body": [
-            "typedef struct _node * Link;",
-            "typedef struct _node node;",
-            "struct _node {",
-            "    int value;",
-            "    Link next;",
-            "};"
-        ],
-        "description": "Creates a linked list template"
-    },
-    "Create int function": {
-        "prefix": "intfunc",
-        "body": [
-            "int $1 () {",
-            "    int $0;",
-            "    return $0;",
-            "}"
-        ],
-        "description": "Creates a function that returns the int type"
-    },
-    "Create float function": {
-        "prefix": "flfunc",
-        "body": [
-            "float $2 () {",
-            "    float $0;",
-            "    return $0;",
-            "}"
-        ],
-        "description": "Creates a function that returns the float type"
-    },
-    "Create double function": {
-        "prefix": "doubfunc",
-        "body": [
-            "double $2 () {",
-            "    double $0;",
-            "    return $0;",
-            "}"
-        ],
-        "description": "Creates a function that returns the double type"
-    },
-    "Create string function": {
-        "prefix": "strfunc",
-        "body": [
-            "char[] $1 () {",
-            "    char[] $0 = {};",
-            "    return $0;",
-            "}"
-        ],
-        "description": "Creates a function that returns the char array type"
-    },
-    "Create long function": {
-        "prefix": "longfunc",
-        "body": [
-            "long $1 () {",
-            "    long $0;",
-            "    return $0;",
-            "}"
-        ],
-        "description": "Creates a function that returns the long type"
-    },
+	"Standard Starter Template": {
+		"prefix": "sst",
+		"body": [
+			"#include <stdio.h>",
+			"",
+			"int main (int argc, char *argv[]) {",
+			"    return 0;",
+			"}"
+		],
+		"description": "A standard starter template for a C program"
+	},
+	"Stdlib Variant Starter Template": {
+		"prefix": "libsst",
+		"body": [
+			"#include <stdio.h>",
+			"#include <stdlib.h>",
+			"",
+			"int main (int argc, char *argv[]) {",
+			"    return EXIT_SUCCESS;",
+			"}"
+		],
+		"description": "A standard starter template for a C program with stdlib included"
+	},
+	"If statement": {
+		"prefix": "if",
+		"body": ["if ($0) {", "    /* code here */ ", "}"],
+		"description": "Creates an if statement"
+	},
+	"Else if statement": {
+		"prefix": "elif",
+		"body": ["else if ($0) {", "    /* code here */ ", "}"],
+		"description": "Creates an else if statement"
+	},
+	"Else statement": {
+		"prefix": "else",
+		"body": ["else {", "    /* code here */ ", "}"],
+		"description": "Creates an else statement"
+	},
+	"For loop": {
+		"prefix": "for",
+		"body": ["for (int i = 0; i < $0; i++) {", "    /* code here */ ", "}"],
+		"description": "Creates a for loop that runs for a certain number if iterations"
+	},
+	"While loop": {
+		"prefix": "while",
+		"body": ["while ($0) {", "    /* code here */ ", "}"],
+		"description": "Creates a while loop"
+	},
+	"Do...while loop": {
+		"prefix": "dowhile",
+		"body": ["do {", "    /* code here */ ", "} while($0)"],
+		"description": "Creates a do...while loop"
+	},
+	"Create linked list": {
+		"prefix": "clist",
+		"body": [
+			"typedef struct _node * Link;",
+			"typedef struct _node node;",
+			"struct _node {",
+			"    int value;",
+			"    Link next;",
+			"};"
+		],
+		"description": "Creates a linked list template"
+	},
+	"Create int function": {
+		"prefix": "intfunc",
+		"body": ["int $1 () {", "    int $0;", "    return $0;", "}"],
+		"description": "Creates a function that returns the int type"
+	},
+	"Create float function": {
+		"prefix": "flfunc",
+		"body": ["float $2 () {", "    float $0;", "    return $0;", "}"],
+		"description": "Creates a function that returns the float type"
+	},
+	"Create double function": {
+		"prefix": "doubfunc",
+		"body": ["double $2 () {", "    double $0;", "    return $0;", "}"],
+		"description": "Creates a function that returns the double type"
+	},
+	"Create string function": {
+		"prefix": "strfunc",
+		"body": ["char[] $1 () {", "    char[] $0 = {};", "    return $0;", "}"],
+		"description": "Creates a function that returns the char array type"
+	},
+	"Create long function": {
+		"prefix": "longfunc",
+		"body": ["long $1 () {", "    long $0;", "    return $0;", "}"],
+		"description": "Creates a function that returns the long type"
+	},
 	"Create definition for virtual table": {
 		"prefix": "vtdef",
 		"body": [
@@ -158,71 +109,59 @@
 	},
 	"Create function for virtual table": {
 		"prefix": "vtfunc",
-		"body": [
-			"${1:void} (*${2:functionName})(struct ${3:ClassName} *self)"
-		],
+		"body": ["${1:void} (*${2:functionName})(struct ${3:ClassName} *self)"],
 		"description": "Create function for virtual table"
 	},
-    "Print variable of type float (2 decimal places)": {
-        "prefix": "pflo",
-        "body": [
-            "printf(\"$0 :>> %.2f\\n\", $0);"
-        ],
-        "description": "Calls printf() to log value of variable of type float rounded to 2 decimal places"
-    },
-    "Print variable of type integer": {
-        "prefix": "pint",
-        "body": [
-            "printf(\"$0 :>> %d\\n\", $0);"
-        ],
-        "description": "Calls printf() to log value of variable of type signed integer"
-    },
-    "Print variable of type char": {
-        "prefix": "pcha",
-        "body": [
-            "printf(\"$0 :>> %c\\n\", $0);"
-        ],
-        "description": "Calls printf() to log value of variable of type char"
-    },
-    "Print variable of type pointer": {
-        "prefix": "ppoint",
-        "body": [
-            "printf(\"$0 :>> %p\\n\", (void *) $0);"
-        ],
-        "description": "Calls printf() to log value of variable of type pointer"
-    },
-    "Print variable of type size_t": {
-        "prefix": "psiz",
-        "body": [
-            "printf(\"$0 :>> %zu\\n\", $0);"
-        ],
-        "description": "Calls printf() to log value of variable of type size_t"
-    },
-    "Allocate memory using calloc": {
-        "prefix": "cal",
-        "body": [
-            "$1*ptr = ($1*)calloc($2, sizeof($1));",
-            "",
-            "if (ptr == NULL)",
-            "{",
-            "  printf(\"Memory allocation failed!\\n\");",
-            "  exit(0);",
-            "}",
-            "",
-            "free(ptr);"
-        ],
-        "description": "Allocates memory to a pointer variable using calloc(), then deallocates using free()."
-    },
-    "Creates a header include guard": {
-        "prefix": "ig",
-        "body": [
-            "#ifndef ${TM_FILENAME/(?:^.*\\\\)?(\\w+)\\W?/${1:/upcase}_/g}",
-            "#define ${TM_FILENAME/(?:^.*\\\\)?(\\w+)\\W?/${1:/upcase}_/g}",
-            "",
-            "// Code for header body",
-            "",
-            "#endif //${TM_FILENAME/(?:^.*\\\\)?(\\w+)\\W?/${1:/upcase}_/g}"
-        ],
-        "description": "Creates header include guard based on file name"
-    }
+	"Print variable of type float (2 decimal places)": {
+		"prefix": "pflo",
+		"body": ["printf(\"$0 :>> %.2f\\n\", $0);"],
+		"description": "Calls printf() to log value of variable of type float rounded to 2 decimal places"
+	},
+	"Print variable of type integer": {
+		"prefix": "pint",
+		"body": ["printf(\"$0 :>> %d\\n\", $0);"],
+		"description": "Calls printf() to log value of variable of type signed integer"
+	},
+	"Print variable of type char": {
+		"prefix": "pcha",
+		"body": ["printf(\"$0 :>> %c\\n\", $0);"],
+		"description": "Calls printf() to log value of variable of type char"
+	},
+	"Print variable of type pointer": {
+		"prefix": "ppoint",
+		"body": ["printf(\"$0 :>> %p\\n\", (void *) $0);"],
+		"description": "Calls printf() to log value of variable of type pointer"
+	},
+	"Print variable of type size_t": {
+		"prefix": "psiz",
+		"body": ["printf(\"$0 :>> %zu\\n\", $0);"],
+		"description": "Calls printf() to log value of variable of type size_t"
+	},
+	"Allocate memory using calloc": {
+		"prefix": "cal",
+		"body": [
+			"$1*ptr = ($1*)calloc($2, sizeof($1));",
+			"",
+			"if (ptr == NULL)",
+			"{",
+			"  printf(\"Memory allocation failed!\\n\");",
+			"  exit(0);",
+			"}",
+			"",
+			"free(ptr);"
+		],
+		"description": "Allocates memory to a pointer variable using calloc(), then deallocates using free()."
+	},
+	"Creates a header include guard": {
+		"prefix": "ig",
+		"body": [
+			"#ifndef ${TM_FILENAME/(?:^.*\\\\)?(\\w+)\\W?/${1:/upcase}_/g}",
+			"#define ${TM_FILENAME/(?:^.*\\\\)?(\\w+)\\W?/${1:/upcase}_/g}",
+			"",
+			"// Code for header body",
+			"",
+			"#endif //${TM_FILENAME/(?:^.*\\\\)?(\\w+)\\W?/${1:/upcase}_/g}"
+		],
+		"description": "Creates header include guard based on file name"
+	}
 }
