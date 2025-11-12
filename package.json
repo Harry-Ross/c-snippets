@@ -37,7 +37,8 @@
 		"format": "biome format --write",
 		"vscode:prepublish": "npm run package",
 		"package": "pnpm check-types && node ./scripts/build.js --production",
-		"deploy": "vsce publish --no-dependencies"
+		"deploy": "vsce publish --no-dependencies",
+		"deploy-vsx": "npx ovsx publish -p $OPEN_VSX_TOKEN"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.3.5",

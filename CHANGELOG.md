@@ -48,3 +48,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added better imports for tests
 - Removed Prettier and ESLint, replaced with Biome 
 
+## [1.4.8]
+### Changed
+- Added publishing on other registry
+

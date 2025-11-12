@@ -35,3 +35,8 @@ jobs:
         run: pnpm run deploy
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
+      - name: Publish
+        run: pnpm run deploy-vsx
+        env:
+          VSCE_PAT: ${{ secrets.OPEN_VSX_TOKEN }}
