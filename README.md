@@ -41,5 +41,4 @@ This extension provides a simple set of VSCode snippets for the C programming la
 | Allocate memory using calloc     | `cal`         | <code>{type} *ptr = ({type}*)calloc(, sizeof({type})); <br>if (ptr == NULL) { <br> &nbsp;&nbsp;&nbsp;printf("Memory allocation failed!\n"); <br> &nbsp;&nbsp;&nbsp;exit(0); <br> } <br> free(ptr); </code> |
 
 
-If you would like to support development of the extension donate Bitcoin here: **1BnrjF49owBx7UjMaJt5crZw5DegUYG3mb**
-#### Authors: [Harry Ross](https://github.com/Harry-Ross) and [Luca Merzetti](https://github.com/lucamerzi)
+#### Contributors: [Harry Ross](https://github.com/Harry-Ross) and [Luca Merzetti](https://github.com/lucamerzi)

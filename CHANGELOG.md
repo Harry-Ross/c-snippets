@@ -52,3 +52,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Changed
 - Added publishing on other registry
 
+## [1.4.11]
+### Changed
+- Removed Bitcoin address 
+
