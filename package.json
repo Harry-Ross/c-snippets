@@ -38,7 +38,8 @@
 		"esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
 		"test-compile": "tsc -p ./",
 		"test": "vscode-test",
-		"lint": "eslint -c .eslintrc.js --ext .ts src"
+		"lint": "biome lint",
+		"format": "biome format --write"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.3.5",
