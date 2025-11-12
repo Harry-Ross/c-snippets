@@ -4,7 +4,7 @@ import * as vscode from "vscode";
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
-export function activate(context: vscode.ExtensionContext) {
+export function activate() {
 	console.log('Congratulations, your extension "c-snippets" is now active!');
 	vscode.window.showInformationMessage(
 		"Thank you for installing C snippets. Happy coding!",
