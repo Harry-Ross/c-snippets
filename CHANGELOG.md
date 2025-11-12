@@ -39,3 +39,4 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.3.3]
 ### Changed
 - Updated tab length to 4 spaces for greater consistency across snippets
+
