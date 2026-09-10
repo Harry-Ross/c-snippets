@@ -144,7 +144,7 @@
 			"",
 			"if (ptr == NULL)",
 			"{",
-			"  printf(\"Memory allocation failed!\\n\");",
+			"  fprintf(stderr,\"Memory allocation failed!\\n\");",
 			"  exit(0);",
 			"}",
 			"",
